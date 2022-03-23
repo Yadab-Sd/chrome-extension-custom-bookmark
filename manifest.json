@@ -1,0 +1,27 @@
+{
+  "name": "Custom Bookmark",
+  "description": "Fexible bookmark system you can use to store important sites locally or linked it to your personal profile!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": ["storage", "bookmarks", "scripting", "tabs", "notifications"],
+  "host_permissions": ["http://www.blogger.com/", "*://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Click DO to active features",
+    "default_icon": {
+      "16": "/images/get_started16.png",
+      "32": "/images/get_started16.png",
+      "48": "/images/get_started16.png",
+      "128": "/images/get_started16.png"
+    }
+  }
+}
